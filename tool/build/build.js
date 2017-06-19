@@ -20,24 +20,24 @@ const exec = (command, display) => {
 exec('rm -rf ./dist/').then(() => {
     // リソースコピー
     return exec('rsync -a ./src/ ./dist/ --exclude "/script/" --exclude "/style/" --exclude "*.pug"', true).then(() => {
-        console.log("resource copy done")
+        console.log("-------------------- resource copy done --------------------")
     })
 }).then(() => {
     // webpack
     return exec('npm run webpack', true).then(() => {
-        console.log("webpack done")
+        console.log("-------------------- webpack done --------------------")
     })
 }).then(() => {
     // pug
     return exec('npm run build-pug', true).then(() => {
-        console.log("build pug done")
+        console.log("-------------------- build pug done --------------------")
     })
 }).then(() => {
     // sass
     return exec('npm run build-sass', true).then(() => {
-        console.log("build sass done")
+        console.log("-------------------- build sass done --------------------")
     })
 }).catch((e) => {
-    console.log("build failed")
+    console.log("-------------------- build failed --------------------")
     console.log(e)
 })
