@@ -1,5 +1,5 @@
-import path from 'path';
-import webpack from 'webpack';
+import path from 'path'
+import webpack from 'webpack'
 
 export default {
     context: path.join(__dirname, "./src/script/entry"),

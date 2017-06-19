@@ -2971,7 +2971,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var riot = __webpack_require__(0);
 //src: src/script/tag/test.tag
 
-riot.tag2('test', '<h1>test</h1>', '', '', function (opts) {});
+riot.tag2('test', '<h1>test</h1>', 'test h1,[data-is="test"] h1{ color: red; }', '', function (opts) {});
 
 /***/ }),
 /* 2 */

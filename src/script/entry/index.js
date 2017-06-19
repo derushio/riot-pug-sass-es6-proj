@@ -1,3 +1,3 @@
-import Test from '../tag/test.tag';
+import Test from '../tag/test.tag'
 
-console.log("test");
+console.log("test")
