@@ -32,6 +32,11 @@ exec('rm -rf ./dist/').then(() => {
     return exec('npm run build-pug', true).then(() => {
         console.log("build pug done")
     })
+}).then(() => {
+    // pug
+    return exec('npm run build-pug', true).then(() => {
+        console.log("build pug done")
+    })
 }).catch((e) => {
     console.log("build failed")
     console.log(e)

@@ -21,7 +21,7 @@
   "scripts": {
     "build": "node ./tool/build/build.js",
     "webpack": "webpack --progress",
-    "webpack-watch": "webpack --progress --watch",
-    "build-pug": "pug --hierarchy -o ./dist/ ./src/"
+    "build-pug": "pug --hierarchy -o ./dist/ ./src/",
+    "build-sass": "./tool/build/build-sass.sh"
   }
 }
