@@ -14,12 +14,14 @@
     "babel-preset-es2015-riot": "^1.1.0",
     "node-sass": "^4.5.3",
     "pug": "^2.0.0-rc.2",
+    "pug-cli": "^1.0.0-alpha6",
     "riot-tag-loader": "^1.0.0",
     "webpack": "^2.6.1"
   },
   "scripts": {
     "build": "node ./tool/build/build.js",
     "webpack": "webpack --progress",
-    "webpack-watch": "webpack --progress --watch"
+    "webpack-watch": "webpack --progress --watch",
+    "build-pug": "pug --hierarchy -o ./dist/ ./src/"
   }
 }

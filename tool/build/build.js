@@ -18,12 +18,19 @@ const exec = (command, display) => {
 
 // クリーンビルド
 exec('rm -rf ./dist/').then(() => {
+    // リソースコピー
     return exec('rsync -a ./src/ ./dist/ --exclude "/script/" --exclude "/style/" --exclude "*.pug"', true).then(() => {
         console.log("resource copy done")
     })
 }).then(() => {
+    // webpack
     return exec('npm run webpack', true).then(() => {
         console.log("webpack done")
+    })
+}).then(() => {
+    // pug
+    return exec('npm run build-pug', true).then(() => {
+        console.log("build pug done")
     })
 }).catch((e) => {
     console.log("build failed")
