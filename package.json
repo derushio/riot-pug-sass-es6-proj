@@ -18,6 +18,7 @@
     "webpack": "^2.6.1"
   },
   "scripts": {
+    "build": "node ./tool/build/build.js",
     "webpack": "webpack --progress",
     "webpack-watch": "webpack --progress --watch"
   }
