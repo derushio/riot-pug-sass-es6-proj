@@ -10,5 +10,5 @@ for entry in ${entries[@]}; do
     echo $entryPath
     echo $entryDir
     echo $entryName
-    node-sass "$entry" "./dist/$entryDir$entryName.bundle.css"
+    node-sass "$entry" "./dist/$entryDir$entryName.css"
 done

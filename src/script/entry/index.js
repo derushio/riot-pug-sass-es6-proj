@@ -1,3 +1,5 @@
-import Test from '../tag/test.tag'
+import riot from "riot"
+import Test from "../tag/test.tag"
 
-console.log("test")
+riot.mount("*");
+
