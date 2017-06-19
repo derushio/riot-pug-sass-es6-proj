@@ -6,7 +6,7 @@ echo $entries
 for entry in ${entries[@]}; do
     entryPath=`echo $entry | cut -c "7-${#entry}"`
     entryName=`echo $entry | cut -c "19-$((${#entry} - 5))"`
-    entryDir=`echo $entryPath | cut -c "1-$((${#entryName} + 1))"`
+    entryDir=`echo $entryPath | cut -c "1-$((${#entryPath} - ${#entryName} - 5))"`
     echo $entryPath
     echo $entryDir
     echo $entryName
