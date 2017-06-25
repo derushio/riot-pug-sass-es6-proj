@@ -44,3 +44,9 @@
 * tool/
     * build/
         * ビルドスクリプト配置場所
+
+## gitignore
+* dist
+    * compile後のファイルはバージョン管理しないことを推奨します
+* node_modules
+    * npmの文化としてnode_modulesはignoreします
