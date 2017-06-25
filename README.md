@@ -24,23 +24,23 @@
     npm run build
     ```
 
-## ディレクトリ構成
+## ディレクトリ構成
 
 * src/
     * ソースコードの配置場所
-    * index.pug デフォルトのエントリポイント
+    * index.pug デフォルトのエントリポイント
     * script/
         * javascriptの配置場所
         * entry/
             * エントリポイントに対応するjsの配置場所
         * tag/
             * tagファイルの配置場所
-    * style/
+    * style/
         * sassファイルの配置場所
-        * entry/
+        * entry/
             * エントリポイントに対応するstyleの記述場所
 * dist/
     * ビルド後のソースの配置場所
-* tool/
+* tool/
     * build/
         * ビルドスクリプト配置場所
